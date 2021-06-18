@@ -21,7 +21,7 @@ function Header() {
     <div className="header">
       <Link to="/">
         <img
-          src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          src="logo.png"
           className="header__logo"
         />
       </Link>
@@ -40,14 +40,7 @@ function Header() {
             </span>
           </div>
         </Link>
-        <div className="header__option">
-          <span className="header__optionLineOne">Returns</span>
-          <span className="header__optionLineTwo">& Orders</span>
-        </div>
-        <div className="header__option">
-          <span className="header__optionLineOne">Your</span>
-          <span className="header__optionLineTwo">Prime</span>
-        </div>
+    
         <Link
           onClick={() => {
             dispatch({

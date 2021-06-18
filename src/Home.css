@@ -3,14 +3,15 @@
   z-index: -1;
   margin-bottom: -250px;
   position: fixed;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-image: #ffffff;
+
 }
 * ::-webkit-scrollbar {
   display: none;
 }
 .home {
   display: flex;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  background: #ffffff;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
