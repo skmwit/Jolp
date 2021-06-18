@@ -3,6 +3,9 @@ import "./Product.css";
 import { useStateValue } from "./StateProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import { HearingTwoTone } from "@material-ui/icons";
 
 function Product({ title, image, id, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
@@ -14,32 +17,20 @@ function Product({ title, image, id, price, rating }) {
         id,
         title,
         image,
-        price,
-        rating,
       },
     });
     toast("Added item to basket!");
   };
 
+
+
   return (
     <div className="product">
-      <div className="product__bestseller">BESTSELLER</div>
+      <img src={image} alt="" />
+        <FavoriteBorderIcon className='heart' onClick={()=>{addToBasket()}}/>
       <div className="product__info">
         <p>{title}</p>
-        <div className="product__price">
-          <small>$</small>
-          <strong>{price}</strong>
-        </div>
-        <div className="product__rating">
-          {Array(rating)
-            .fill()
-            .map((rate) => (
-              <p>⭐</p>
-            ))}
-        </div>
       </div>
-      <img src={image} alt="" />
-      <button onClick={addToBasket}>Add to Basket</button>
     </div>
   );
 }

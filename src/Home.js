@@ -12,55 +12,78 @@ const Home = () => {
     <div className="home">
       <div className="home__container">
         
-        <div className="home__row" style={{ marginTop: "300px" }}>
+        <div className="home__row">
           <Product
-            id="12849"
-            title="The Most helpful book in the world, this book gives you basic knowledge about life (ofcourse if you do not know)."
-            price={29.99}
+            id="24242"
+            title="포멀한 회색 청바지"
             image={'11000.jpg'}
-            rating={5}
           />
           <Product
-            id="3534345"
-            title="The Most helpful book in the world, this book gives you basic knowledge about life (ofcourse if you do not know)."
-            price={29.99}
-            image={`https://m.media-amazon.com/images/I/410b3ttpfAL.__AC_SY200_.jpg`}
-            rating={5}
+            id="24242"
+            title="포멀한 회색 청바지"
+            image={'11000.jpg'}
           />
+          <Product
+             id="24242"
+             title="포멀한 회색 청바지"
+             image={'11000.jpg'}
+          />
+          <Product
+             id="24242"
+             title="포멀한 회색 청바지"
+             image={'11000.jpg'}
+          />
+      
         </div>
 
         <div className="home__row">
           <Product
-            id="24242"
-            title="The Most helpful book in the world, this book gives you basic knowledge about life (ofcourse if you do not know)."
-            price={29.99}
-            image={`https://m.media-amazon.com/images/I/410b3ttpfAL.__AC_SY200_.jpg`}
-            rating={5}
+             id="24242"
+             title="포멀한 회색 청바지"
+             image={'11000.jpg'}
           />
           <Product
-            id="23553647"
-            title="The Most helpful book in the world, this book gives you basic knowledge about life (ofcourse if you do not know)."
-            price={29.99}
-            image={`https://m.media-amazon.com/images/I/410b3ttpfAL.__AC_SY200_.jpg`}
-            rating={5}
+             id="24242"
+             title="포멀한 회색 청바지"
+             image={'11000.jpg'}
           />
           <Product
-            id="359473"
-            title="The Most helpful book in the world, this book gives you basic knowledge about life (ofcourse if you do not know)."
-            price={29.99}
-            image={`https://m.media-amazon.com/images/I/410b3ttpfAL.__AC_SY200_.jpg`}
-            rating={5}
+             id="24242"
+             title="포멀한 회색 청바지"
+             image={'11000.jpg'}
           />
+          <Product
+             id="24242"
+             title="포멀한 회색 청바지"
+             image={'11000.jpg'}
+          />
+    
         </div>
+        
         <div className="home__row">
           <Product
-            id="4839274"
-            title="The Most helpful book in the world, this book gives you basic knowledge about life (ofcourse if you do not know)."
-            price={29.99}
-            image={`https://m.media-amazon.com/images/I/410b3ttpfAL.__AC_SY200_.jpg`}
-            rating={5}
+             id="24242"
+             title="포멀한 회색 청바지"
+             image={'11000.jpg'}
           />
+          <Product
+             id="24242"
+             title="포멀한 회색 청바지"
+             image={'11000.jpg'}
+          />
+          <Product
+             id="24242"
+             title="포멀한 회색 청바지"
+             image={'11000.jpg'}
+          />
+          <Product
+             id="24242"
+             title="포멀한 회색 청바지"
+             image={'11000.jpg'}
+          />
+      
         </div>
+     
       </div>
     </div>
   );

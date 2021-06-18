@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
-import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
@@ -50,7 +50,7 @@ function Header() {
           }}
         >
           <div className="header__optionBasket">
-            <ShoppingBasketIcon />
+            <FavoriteBorderIcon />
             <span
               className="header__basketCount header__optionLineTwo"
               style={{ marginLeft: "5px" }}
