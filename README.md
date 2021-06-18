@@ -1,7 +1,7 @@
 # 웹 구현
 
 출처
-https://github.com/atharvadeosthale/amazon-clone
+
 
 
 ## 해야할 것
