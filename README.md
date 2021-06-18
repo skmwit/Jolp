@@ -2,7 +2,7 @@
 
 출처
 
-
+https://github.com/atharvadeosthale/amazon-clone
 
 ## 해야할 것
 - [ ] 빈 하트 누르면 --> 채워진 하트
