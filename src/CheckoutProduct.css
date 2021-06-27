@@ -2,9 +2,11 @@
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 50%;
 }
 .checkoutProduct__info {
   padding-left: 20px;
+  width: 50%;
 }
 .checkoutProduct__info > button {
   background: #f0c14b;

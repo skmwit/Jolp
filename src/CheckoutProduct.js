@@ -18,21 +18,16 @@ function CheckoutProduct({ id, image, title, price, rating }) {
   return (
     <div className="checkoutProduct">
       <img src={image} alt="" className="checkoutProduct__image" />
+      <div className="checkoutProduct__title">{title}
+        <button onClick={removeFromBasket}>찜에서 삭제</button>
+      </div>
+
+      <img src={image} alt="" className="checkoutProduct__image" />
       <div className="checkoutProduct__info">
         <p className="checkoutProduct__title">{title}</p>
-        <p className="checkoutProduct__price">
-          <small>$</small>
-          <strong>{price}</strong>
-        </p>
-        <p className="checkoutProduct__rating">
-          {Array(rating)
-            .fill()
-            .map((rate) => (
-              <p>⭐</p>
-            ))}
-        </p>
-        <button onClick={removeFromBasket}>Remove from basket</button>
+        <button onClick={removeFromBasket}>찜에서 삭제</button>
       </div>
+
     </div>
   );
 }

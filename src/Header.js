@@ -33,10 +33,10 @@ function Header() {
         <Link to={!user && "/login"}>
           <div className="header__option" onClick={handleAuthentication}>
             <span className="header__optionLineOne">
-              {user ? user.email : "Hello Guest"}
+             { /*user ? user.email : "Hello Guest"*/}
             </span>
             <span className="header__optionLineTwo">
-              {user ? "Sign Out" : "Sign In"}
+              {user ? "로그아웃" : "로그인"}
             </span>
           </div>
         </Link>
@@ -55,7 +55,7 @@ function Header() {
               className="header__basketCount header__optionLineTwo"
               style={{ marginLeft: "5px" }}
             >
-              {basket?.length}
+              {/*basket?.length*/}
             </span>
           </div>
         </Link>
