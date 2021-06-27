@@ -1,11 +1,14 @@
-## Amazon Clone
+# 웹 구현
 
-NOTE: This is made only for educational purposes, and is in no way associated with Amazon.
+출처
 
-## Live app
+https://github.com/atharvadeosthale/amazon-clone
 
-<a href="https://amz-clone-b9eab.web.app/" target="_blank">https://amz-clone-b9eab.web.app/</a>
-
-## Usage
-
-Just use <code>npm install</code> and then <code>npm start</code> and the Development server will start.
+## 해야할 것
+- [ ] 빈 하트 누르면 --> 채워진 하트
+- [ ] 하트 페이지
+ - 필터(진청, 중청 등등)
+ - 하트 취소할 수 있게?
+- [ ] 로고 예쁘게
+- [ ] 메인 페이지 --> 하트에 따라 맞춤형 추천으로
+- [ ] 로그인?
