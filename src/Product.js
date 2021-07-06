@@ -19,7 +19,7 @@ function Product({ title, image, id, price, rating }) {
         image,
       },
     });
-    toast("Added item to basket!");
+    // toast("Added item to basket!");
   };
 
 

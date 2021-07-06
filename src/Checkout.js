@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import "./Checkout.css";
 import Subtotal from "./Subtotal";
 import { useStateValue } from "./StateProvider";
-import CheckoutProduct from "./CheckoutProduct";
+import CheckoutProduct from "./Delete_heart";
 import { Link, useHistory } from "react-router-dom";
 
 import FlipMove from "react-flip-move";

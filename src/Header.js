@@ -7,6 +7,7 @@ import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import { Drawer } from "@material-ui/core";
 import Checkout from "./Checkout";
+import PersonIcon from '@material-ui/icons/Person';
 
 function Header() {
   const [{ basket, user, drawer }, dispatch] = useStateValue();
@@ -19,6 +20,7 @@ function Header() {
 
   return (
     <div className="header">
+      
       <Link to="/">
         <img
           src="logo.png"
@@ -26,21 +28,10 @@ function Header() {
         />
       </Link>
       <div className="header__search">
-        <input className="header__searchInput" type="text" />
+        <input className="header__searchInput" type="search" placeholder="검색"/>
         <SearchIcon className="header__searchIcon" />
       </div>
       <div className="header__nav">
-        <Link to={!user && "/login"}>
-          <div className="header__option" onClick={handleAuthentication}>
-            <span className="header__optionLineOne">
-             { /*user ? user.email : "Hello Guest"*/}
-            </span>
-            <span className="header__optionLineTwo">
-              {user ? "로그아웃" : "로그인"}
-            </span>
-          </div>
-        </Link>
-    
         <Link
           onClick={() => {
             dispatch({
@@ -50,13 +41,15 @@ function Header() {
           }}
         >
           <div className="header__optionBasket">
-            <FavoriteBorderIcon />
+            <FavoriteBorderIcon className="header__heart"  />
+            <PersonIcon className="header__person"/>
             <span
               className="header__basketCount header__optionLineTwo"
               style={{ marginLeft: "5px" }}
             >
               {/*basket?.length*/}
             </span>
+            
           </div>
         </Link>
         <Drawer open={drawer} style={{ width: "50%" }}>

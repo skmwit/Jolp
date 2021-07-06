@@ -3,7 +3,7 @@
   z-index: -1;
   margin-bottom: -250px;
   position: fixed;
-  mask-image: #ffffff;
+  mask-image: #ff0c0c;
 
 }
 * ::-webkit-scrollbar {
@@ -11,11 +11,11 @@
 }
 .home {
   display: flex;
-  background: #ffffff;
+  /* background: #ffffff; */
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1500px;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 16px;
 }
 .home__row {
   display: flex;
