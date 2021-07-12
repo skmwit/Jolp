@@ -16,22 +16,22 @@ const Home = () => {
           <Product
             id="24242"
             title="포멀한 회색 청바지"
-            image={'11000.jpg'}
+            image={'img11.jpg'}
           />
           <Product
             id="24242"
-            title="포멀한 회색 청바지"
-            image={'11000.jpg'}
+            title="아이보리 슬랙스"
+            image={'img10.jpg'}
           />
           <Product
              id="24242"
-             title="포멀한 회색 청바지"
-             image={'11000.jpg'}
+             title="블랙 편한 바지"
+             image={'img9.jpg'}
           />
           <Product
              id="24242"
-             title="포멀한 회색 청바지"
-             image={'11000.jpg'}
+             title="스키니 연청바지"
+             image={'img8.jpg'}
           />
       
         </div>
@@ -39,23 +39,23 @@ const Home = () => {
         <div className="home__row">
           <Product
              id="24242"
-             title="포멀한 회색 청바지"
-             image={'11000.jpg'}
+             title="베이지 트레이닝 바지"
+             image={'img7.jpg'}
+          />
+          <Product
+             id="24242"
+             title="편한 블랙 바지"
+             image={'img6.jpg'}
+          />
+          <Product
+             id="24242"
+             title="편한 블랙 바지"
+             image={'img5.jpg'}
           />
           <Product
              id="24242"
              title="포멀한 회색 청바지"
-             image={'11000.jpg'}
-          />
-          <Product
-             id="24242"
-             title="포멀한 회색 청바지"
-             image={'11000.jpg'}
-          />
-          <Product
-             id="24242"
-             title="포멀한 회색 청바지"
-             image={'11000.jpg'}
+             image={'img4.jpg'}
           />
     
         </div>
@@ -64,22 +64,22 @@ const Home = () => {
           <Product
              id="24242"
              title="포멀한 회색 청바지"
-             image={'11000.jpg'}
+             image={'img3.jpg'}
           />
           <Product
              id="24242"
              title="포멀한 회색 청바지"
-             image={'11000.jpg'}
+             image={'img2.jpg'}
           />
           <Product
              id="24242"
              title="포멀한 회색 청바지"
-             image={'11000.jpg'}
+             image={'img1.jpg'}
           />
           <Product
              id="24242"
              title="포멀한 회색 청바지"
-             image={'11000.jpg'}
+             image={'img10.jpg'}
           />
       
         </div>

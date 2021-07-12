@@ -1,16 +1,26 @@
 .checkout {
-  padding: 20px;
-  background-color: white;
+  padding: 0px 40px;
+  background-color:white;
   height: max-content;
-  width: 50%;
 }
-.checkout__title {
-  margin-right: 10%;
-  padding: 10%;
-  border-bottom: 1px solid lightgray;
-  width: 50%;
+.checkout__width{
+  width: 40%;
+  max-width: 40%;
+  min-width: 40%;
 }
-.checkout__center {
-  width: 50%;
-  text-align: center;
+
+/* .checkout__title {
+  color: #ff00d4;
+  display: flex;
+  font-size: 40px !important;
+} */
+.checkout__heart {
+  color: #ff00d4;
+  font-size: 40px !important;
+  margin: 10px 30px;
 }
+
+.checkout__left{
+  display:flex;
+}
+

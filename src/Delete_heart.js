@@ -3,8 +3,9 @@ import "./Delete_heart.css";
 import { useStateValue } from "./StateProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
-function CheckoutProduct({ id, image, title, price, rating }) {
+function CheckoutProduct({ id, image, title}) { //하트 누르면 지워짐
   const [{ basket }, dispatch] = useStateValue();
 
   const removeFromBasket = () => {
@@ -19,16 +20,9 @@ function CheckoutProduct({ id, image, title, price, rating }) {
     <div className="checkoutProduct">
       <img src={image} alt="" className="checkoutProduct__image" />
       <div className="checkoutProduct__info">
+        <FavoriteIcon className="checkoutProduct__heart" onClick={removeFromBasket}></FavoriteIcon>
         <p className="checkoutProduct__title">{title}</p>
-        <button onClick={removeFromBasket}>찜에서 삭제</button>
       </div>
-
-      <img src={image} alt="" className="checkoutProduct__image" />
-      <div className="checkoutProduct__info">
-        <p className="checkoutProduct__title">{title}</p>
-        <button onClick={removeFromBasket}>찜에서 삭제</button>
-      </div>
-
     </div>
   );
 }

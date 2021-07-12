@@ -1,23 +1,23 @@
 import React, { Fragment } from "react";
 import "./Checkout.css";
-import Subtotal from "./Subtotal";
 import { useStateValue } from "./StateProvider";
 import CheckoutProduct from "./Delete_heart";
 import { Link, useHistory } from "react-router-dom";
-
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import FlipMove from "react-flip-move";
 
-function Checkout() {
+
+function Checkout() { //찜 기능 
   const history = useHistory();
   const [{ basket, user, drawer }, dispatch] = useStateValue();
 
   return (
+    <div className="checkout__width">
     <Fragment>
       <Link to="/">
-        <div className="checkout__center">
-          <img
-            src="logo.png"
-            style={{ height: 70, marginTop: 20 }}
+        <div>
+          <FavoriteIcon 
+          className="checkout__heart"
             onClick={() =>
               dispatch({
                 type: "SET_DRAWER",
@@ -29,13 +29,12 @@ function Checkout() {
       </Link>
       <div className="checkout">
         <div className="checkout__left">
-          <div>
-            <h2 className="checkout__title">찜</h2>
-          </div>
-          <FinalProducts />
+          {/* <div className="checkout__title"></div> */}
+          <FinalProducts/>
         </div>
       </div>
     </Fragment>
+    </div>
   );
 }
 
@@ -45,10 +44,8 @@ const FinalProducts = () => {
   return (
     <Fragment>
       {basket.map((item) => (
-        <CheckoutProduct
+        <CheckoutProduct 
           id={item.id}
-          price={item.price}
-          rating={item.rating}
           image={item.image}
           title={item.title}
         />
