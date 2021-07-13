@@ -25,4 +25,4 @@
 https://github.com/atharvadeosthale/amazon-clone
 https://youtu.be/RDV3Z1KCBvo
 
-영상을 보면서 클론 프로젝트를 완성한 후, 필요한 방향으로 수정했습니다. 
+
