@@ -4,7 +4,6 @@ import SearchIcon from "@material-ui/icons/Search";
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
-import { auth } from "./firebase";
 import { Drawer } from "@material-ui/core";
 import Checkout from "./Checkout";
 import PersonIcon from '@material-ui/icons/Person';
@@ -12,11 +11,7 @@ import PersonIcon from '@material-ui/icons/Person';
 function Header() {
   const [{ basket, user, drawer }, dispatch] = useStateValue();
 
-  const handleAuthentication = () => {
-    if (user) {
-      auth.signOut();
-    }
-  };
+
 
   return (
     <div className="header">
