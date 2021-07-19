@@ -1,0 +1,664 @@
+[2021-07-19T20:47:54,943][INFO ][o.e.n.Node               ] [LAPTOP-2EM23IOC] version[7.13.3], pid[34092], build[default/zip/5d21bea28db1e89ecc1f66311ebdec9dc3aa7d64/2021-07-02T12:06:10.804015202Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/15.0.1/15.0.1+9-18]
+[2021-07-19T20:47:54,953][INFO ][o.e.n.Node               ] [LAPTOP-2EM23IOC] JVM home [C:\Program Files\Java\jdk-15.0.1], using bundled JDK [false]
+[2021-07-19T20:47:54,955][INFO ][o.e.n.Node               ] [LAPTOP-2EM23IOC] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -XX:+UseG1GC, -Djava.io.tmpdir=C:\Users\hj243\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Xms4053m, -Xmx4053m, -XX:MaxDirectMemorySize=2125463552, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Delasticsearch, -Des.path.home=C:\Users\hj243\Downloads\elasticsearch-7.13.3, -Des.path.conf=C:\Users\hj243\Downloads\elasticsearch-7.13.3\config, -Des.distribution.flavor=default, -Des.distribution.type=zip, -Des.bundled_jdk=true]
+[2021-07-19T20:48:05,710][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [aggs-matrix-stats]
+[2021-07-19T20:48:05,712][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [analysis-common]
+[2021-07-19T20:48:05,713][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [constant-keyword]
+[2021-07-19T20:48:05,714][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [frozen-indices]
+[2021-07-19T20:48:05,715][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [ingest-common]
+[2021-07-19T20:48:05,716][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [ingest-geoip]
+[2021-07-19T20:48:05,718][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [ingest-user-agent]
+[2021-07-19T20:48:05,720][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [kibana]
+[2021-07-19T20:48:05,721][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [lang-expression]
+[2021-07-19T20:48:05,722][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [lang-mustache]
+[2021-07-19T20:48:05,723][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [lang-painless]
+[2021-07-19T20:48:05,725][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [mapper-extras]
+[2021-07-19T20:48:05,726][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [mapper-version]
+[2021-07-19T20:48:05,727][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [parent-join]
+[2021-07-19T20:48:05,728][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [percolator]
+[2021-07-19T20:48:05,731][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [rank-eval]
+[2021-07-19T20:48:05,735][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [reindex]
+[2021-07-19T20:48:05,738][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [repositories-metering-api]
+[2021-07-19T20:48:05,742][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [repository-encrypted]
+[2021-07-19T20:48:05,745][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [repository-url]
+[2021-07-19T20:48:05,746][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [runtime-fields-common]
+[2021-07-19T20:48:05,748][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [search-business-rules]
+[2021-07-19T20:48:05,751][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [searchable-snapshots]
+[2021-07-19T20:48:05,753][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [snapshot-repo-test-kit]
+[2021-07-19T20:48:05,757][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [spatial]
+[2021-07-19T20:48:05,759][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [transform]
+[2021-07-19T20:48:05,760][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [transport-netty4]
+[2021-07-19T20:48:05,763][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [unsigned-long]
+[2021-07-19T20:48:05,764][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [vectors]
+[2021-07-19T20:48:05,766][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [wildcard]
+[2021-07-19T20:48:05,770][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-aggregate-metric]
+[2021-07-19T20:48:05,773][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-analytics]
+[2021-07-19T20:48:05,775][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-async]
+[2021-07-19T20:48:05,777][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-async-search]
+[2021-07-19T20:48:05,779][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-autoscaling]
+[2021-07-19T20:48:05,781][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-ccr]
+[2021-07-19T20:48:05,783][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-core]
+[2021-07-19T20:48:05,787][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-data-streams]
+[2021-07-19T20:48:05,792][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-deprecation]
+[2021-07-19T20:48:05,794][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-enrich]
+[2021-07-19T20:48:05,796][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-eql]
+[2021-07-19T20:48:05,798][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-fleet]
+[2021-07-19T20:48:05,800][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-graph]
+[2021-07-19T20:48:05,804][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-identity-provider]
+[2021-07-19T20:48:05,807][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-ilm]
+[2021-07-19T20:48:05,809][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-logstash]
+[2021-07-19T20:48:05,812][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-ml]
+[2021-07-19T20:48:05,814][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-monitoring]
+[2021-07-19T20:48:05,816][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-ql]
+[2021-07-19T20:48:05,820][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-rollup]
+[2021-07-19T20:48:05,823][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-security]
+[2021-07-19T20:48:05,826][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-shutdown]
+[2021-07-19T20:48:05,828][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-sql]
+[2021-07-19T20:48:05,830][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-stack]
+[2021-07-19T20:48:05,831][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-text-structure]
+[2021-07-19T20:48:05,835][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-voting-only-node]
+[2021-07-19T20:48:05,839][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] loaded module [x-pack-watcher]
+[2021-07-19T20:48:05,842][INFO ][o.e.p.PluginsService     ] [LAPTOP-2EM23IOC] no plugins loaded
+[2021-07-19T20:48:07,626][INFO ][o.e.e.NodeEnvironment    ] [LAPTOP-2EM23IOC] using [1] data paths, mounts [[(C:)]], net usable_space [9.6gb], net total_space [222.8gb], types [NTFS]
+[2021-07-19T20:48:07,628][INFO ][o.e.e.NodeEnvironment    ] [LAPTOP-2EM23IOC] heap size [3.9gb], compressed ordinary object pointers [true]
+[2021-07-19T20:48:08,374][INFO ][o.e.n.Node               ] [LAPTOP-2EM23IOC] node name [LAPTOP-2EM23IOC], node ID [8JxikF5BTd-wFlAx5YbWGQ], cluster name [elasticsearch], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2021-07-19T20:48:20,056][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [LAPTOP-2EM23IOC] [controller/27072] [Main.cc@117] controller (64 bit): Version 7.13.3 (Build d74de47cfda9c3) Copyright (c) 2021 Elasticsearch BV
+[2021-07-19T20:48:21,294][INFO ][o.e.x.s.a.s.FileRolesStore] [LAPTOP-2EM23IOC] parsed [0] roles from file [C:\Users\hj243\Downloads\elasticsearch-7.13.3\config\roles.yml]
+[2021-07-19T20:48:23,158][INFO ][o.e.i.g.LocalDatabases   ] [LAPTOP-2EM23IOC] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [C:\Users\hj243\Downloads\elasticsearch-7.13.3\config\ingest-geoip] for changes
+[2021-07-19T20:48:23,163][INFO ][o.e.i.g.DatabaseRegistry ] [LAPTOP-2EM23IOC] initialized database registry, using geoip-databases directory [C:\Users\hj243\AppData\Local\Temp\elasticsearch\geoip-databases\8JxikF5BTd-wFlAx5YbWGQ]
+[2021-07-19T20:48:25,685][INFO ][o.e.t.NettyAllocator     ] [LAPTOP-2EM23IOC] creating NettyAllocator with the following configs: [name=elasticsearch_configured, chunk_size=1mb, suggested_max_allocation_size=1mb, factors={es.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=4mb}]
+[2021-07-19T20:48:25,827][INFO ][o.e.d.DiscoveryModule    ] [LAPTOP-2EM23IOC] using discovery type [zen] and seed hosts providers [settings]
+[2021-07-19T20:48:27,078][INFO ][o.e.g.DanglingIndicesState] [LAPTOP-2EM23IOC] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2021-07-19T20:48:28,332][INFO ][o.e.n.Node               ] [LAPTOP-2EM23IOC] initialized
+[2021-07-19T20:48:28,333][INFO ][o.e.n.Node               ] [LAPTOP-2EM23IOC] starting ...
+[2021-07-19T20:48:28,370][INFO ][o.e.x.s.c.f.PersistentCache] [LAPTOP-2EM23IOC] persistent cache index loaded
+[2021-07-19T20:48:29,378][INFO ][o.e.t.TransportService   ] [LAPTOP-2EM23IOC] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-07-19T20:48:29,736][WARN ][o.e.b.BootstrapChecks    ] [LAPTOP-2EM23IOC] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2021-07-19T20:48:29,761][INFO ][o.e.c.c.ClusterBootstrapService] [LAPTOP-2EM23IOC] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2021-07-19T20:48:32,776][INFO ][o.e.c.c.Coordinator      ] [LAPTOP-2EM23IOC] setting initial configuration to VotingConfiguration{8JxikF5BTd-wFlAx5YbWGQ}
+[2021-07-19T20:48:33,045][INFO ][o.e.c.s.MasterService    ] [LAPTOP-2EM23IOC] elected-as-master ([1] nodes joined)[{LAPTOP-2EM23IOC}{8JxikF5BTd-wFlAx5YbWGQ}{NmRJWaw9QqGvr1uRFMczZA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 1, version: 1, delta: master node changed {previous [], current [{LAPTOP-2EM23IOC}{8JxikF5BTd-wFlAx5YbWGQ}{NmRJWaw9QqGvr1uRFMczZA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2021-07-19T20:48:33,182][INFO ][o.e.c.c.CoordinationState] [LAPTOP-2EM23IOC] cluster UUID set to [0Ajrk74gTESMLeDSxWirFg]
+[2021-07-19T20:48:33,297][INFO ][o.e.c.s.ClusterApplierService] [LAPTOP-2EM23IOC] master node changed {previous [], current [{LAPTOP-2EM23IOC}{8JxikF5BTd-wFlAx5YbWGQ}{NmRJWaw9QqGvr1uRFMczZA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 1, version: 1, reason: Publication{term=1, version=1}
+[2021-07-19T20:48:33,354][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 9.6gb[4.3%], all indices on this node will be marked read-only
+[2021-07-19T20:48:33,442][INFO ][o.e.x.c.t.IndexTemplateRegistry] [LAPTOP-2EM23IOC] adding legacy template [.ml-anomalies-] for [ml], because it doesn't exist
+[2021-07-19T20:48:33,444][INFO ][o.e.x.c.t.IndexTemplateRegistry] [LAPTOP-2EM23IOC] adding legacy template [.ml-state] for [ml], because it doesn't exist
+[2021-07-19T20:48:33,455][INFO ][o.e.x.c.t.IndexTemplateRegistry] [LAPTOP-2EM23IOC] adding legacy template [.ml-notifications-000001] for [ml], because it doesn't exist
+[2021-07-19T20:48:33,457][INFO ][o.e.x.c.t.IndexTemplateRegistry] [LAPTOP-2EM23IOC] adding legacy template [.ml-stats] for [ml], because it doesn't exist
+[2021-07-19T20:48:33,682][INFO ][o.e.g.GatewayService     ] [LAPTOP-2EM23IOC] recovered [0] indices into cluster_state
+[2021-07-19T20:48:33,782][INFO ][o.e.h.AbstractHttpServerTransport] [LAPTOP-2EM23IOC] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-07-19T20:48:33,799][INFO ][o.e.n.Node               ] [LAPTOP-2EM23IOC] started
+[2021-07-19T20:48:34,114][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding template [.ml-state] for index patterns [.ml-state*]
+[2021-07-19T20:48:34,453][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding template [.ml-anomalies-] for index patterns [.ml-anomalies-*]
+[2021-07-19T20:48:34,571][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding template [.ml-stats] for index patterns [.ml-stats-*]
+[2021-07-19T20:48:34,689][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding template [.ml-notifications-000001] for index patterns [.ml-notifications-000001]
+[2021-07-19T20:48:34,794][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding component template [synthetics-settings]
+[2021-07-19T20:48:34,911][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding component template [logs-mappings]
+[2021-07-19T20:48:35,049][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding component template [metrics-settings]
+[2021-07-19T20:48:35,222][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding component template [logs-settings]
+[2021-07-19T20:48:35,346][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding component template [synthetics-mappings]
+[2021-07-19T20:48:35,498][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding component template [metrics-mappings]
+[2021-07-19T20:48:35,703][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding index template [ilm-history] for index patterns [ilm-history-5*]
+[2021-07-19T20:48:35,857][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding index template [.watch-history-13] for index patterns [.watcher-history-13*]
+[2021-07-19T20:48:35,964][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding index template [.slm-history] for index patterns [.slm-history-5*]
+[2021-07-19T20:48:36,094][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding template [.monitoring-alerts-7] for index patterns [.monitoring-alerts-7]
+[2021-07-19T20:48:36,246][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding template [.monitoring-es] for index patterns [.monitoring-es-7-*]
+[2021-07-19T20:48:36,398][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding template [.monitoring-kibana] for index patterns [.monitoring-kibana-7-*]
+[2021-07-19T20:48:36,561][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding template [.monitoring-logstash] for index patterns [.monitoring-logstash-7-*]
+[2021-07-19T20:48:36,828][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding template [.monitoring-beats] for index patterns [.monitoring-beats-7-*]
+[2021-07-19T20:48:37,105][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding index template [logs] for index patterns [logs-*-*]
+[2021-07-19T20:48:37,256][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding index template [synthetics] for index patterns [synthetics-*-*]
+[2021-07-19T20:48:37,508][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding index template [metrics] for index patterns [metrics-*-*]
+[2021-07-19T20:48:37,712][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [LAPTOP-2EM23IOC] adding index lifecycle policy [ml-size-based-ilm-policy]
+[2021-07-19T20:48:37,880][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [LAPTOP-2EM23IOC] adding index lifecycle policy [logs]
+[2021-07-19T20:48:38,018][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [LAPTOP-2EM23IOC] adding index lifecycle policy [metrics]
+[2021-07-19T20:48:38,128][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [LAPTOP-2EM23IOC] adding index lifecycle policy [synthetics]
+[2021-07-19T20:48:38,232][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [LAPTOP-2EM23IOC] adding index lifecycle policy [watch-history-ilm-policy]
+[2021-07-19T20:48:38,361][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [LAPTOP-2EM23IOC] adding index lifecycle policy [ilm-history-ilm-policy]
+[2021-07-19T20:48:38,484][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [LAPTOP-2EM23IOC] adding index lifecycle policy [slm-history-ilm-policy]
+[2021-07-19T20:48:38,605][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [LAPTOP-2EM23IOC] adding index lifecycle policy [.fleet-actions-results-ilm-policy]
+[2021-07-19T20:48:38,905][INFO ][o.e.l.LicenseService     ] [LAPTOP-2EM23IOC] license [859baf2a-08f4-4493-8d9e-4d3da42d24eb] mode [basic] - valid
+[2021-07-19T20:48:38,909][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [LAPTOP-2EM23IOC] Active license is now [BASIC]; Security is disabled
+[2021-07-19T20:48:38,910][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [LAPTOP-2EM23IOC] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security.
+[2021-07-19T20:49:03,385][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 9.6gb[4.3%], all indices on this node will be marked read-only
+[2021-07-19T20:49:33,406][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 9.6gb[4.3%], all indices on this node will be marked read-only
+[2021-07-19T20:50:03,413][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 9.5gb[4.3%], all indices on this node will be marked read-only
+[2021-07-19T20:50:33,427][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.5gb[3.8%], all indices on this node will be marked read-only
+[2021-07-19T20:51:03,435][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.5gb[3.8%], all indices on this node will be marked read-only
+[2021-07-19T20:51:33,451][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.5gb[3.8%], all indices on this node will be marked read-only
+[2021-07-19T20:52:03,459][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.5gb[3.8%], all indices on this node will be marked read-only
+[2021-07-19T20:52:33,470][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.5gb[3.8%], all indices on this node will be marked read-only
+[2021-07-19T20:53:03,479][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.4gb[3.8%], all indices on this node will be marked read-only
+[2021-07-19T20:53:33,487][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.4gb[3.8%], all indices on this node will be marked read-only
+[2021-07-19T20:54:03,502][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.4gb[3.8%], all indices on this node will be marked read-only
+[2021-07-19T20:54:33,521][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.4gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T20:55:03,541][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.4gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T20:55:33,560][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.4gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T20:56:03,577][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.4gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T20:56:33,602][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.4gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T20:57:03,616][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T20:57:33,635][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T20:58:03,654][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T20:58:33,670][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T20:59:03,695][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T20:59:33,710][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:00:03,752][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:00:33,771][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:01:03,782][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:01:33,789][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:02:03,798][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:02:33,815][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:03:03,826][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:03:33,838][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:04:03,861][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:04:33,878][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:05:03,894][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:05:33,915][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:06:03,923][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:06:33,934][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:07:03,954][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:07:33,970][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:08:03,983][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:08:33,997][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:09:04,020][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:09:34,034][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:10:04,051][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 8.3gb[3.7%], all indices on this node will be marked read-only
+[2021-07-19T21:10:34,079][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 7.3gb[3.2%], all indices on this node will be marked read-only
+[2021-07-19T21:11:04,104][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 7.3gb[3.2%], all indices on this node will be marked read-only
+[2021-07-19T21:11:34,127][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 7.3gb[3.2%], all indices on this node will be marked read-only
+[2021-07-19T21:12:04,163][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 7.2gb[3.2%], all indices on this node will be marked read-only
+[2021-07-19T21:12:34,223][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 7gb[3.1%], all indices on this node will be marked read-only
+[2021-07-19T21:13:04,331][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.9gb[3.1%], all indices on this node will be marked read-only
+[2021-07-19T21:13:34,383][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.4gb[2.9%], all indices on this node will be marked read-only
+[2021-07-19T21:14:04,408][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:14:34,426][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:15:04,439][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:15:34,449][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:16:04,459][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:16:34,476][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:17:04,495][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:17:34,509][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:18:04,545][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:18:34,562][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:19:04,577][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:19:34,589][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:20:04,612][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:20:34,640][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:21:04,654][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:21:14,993][INFO ][o.e.c.m.MetadataCreateIndexService] [LAPTOP-2EM23IOC] [.kibana_7.13.3_001] creating index, cause [api], templates [], shards [1]/[1]
+[2021-07-19T21:21:15,133][INFO ][o.e.c.r.a.AllocationService] [LAPTOP-2EM23IOC] updating number_of_replicas to [0] for indices [.kibana_7.13.3_001]
+[2021-07-19T21:21:16,021][INFO ][o.e.c.m.MetadataCreateIndexService] [LAPTOP-2EM23IOC] [.kibana_task_manager_7.13.3_001] creating index, cause [api], templates [], shards [1]/[1]
+[2021-07-19T21:21:16,025][INFO ][o.e.c.r.a.AllocationService] [LAPTOP-2EM23IOC] updating number_of_replicas to [0] for indices [.kibana_task_manager_7.13.3_001]
+[2021-07-19T21:21:16,694][INFO ][o.e.c.r.a.AllocationService] [LAPTOP-2EM23IOC] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.kibana_task_manager_7.13.3_001][0], [.kibana_7.13.3_001][0]]]).
+[2021-07-19T21:21:32,548][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding template [.management-beats] for index patterns [.management-beats]
+[2021-07-19T21:21:33,044][INFO ][o.e.c.m.MetadataCreateIndexService] [LAPTOP-2EM23IOC] [.apm-agent-configuration] creating index, cause [api], templates [], shards [1]/[1]
+[2021-07-19T21:21:33,048][INFO ][o.e.c.r.a.AllocationService] [LAPTOP-2EM23IOC] updating number_of_replicas to [0] for indices [.apm-agent-configuration]
+[2021-07-19T21:21:33,331][INFO ][o.e.c.m.MetadataCreateIndexService] [LAPTOP-2EM23IOC] [.apm-custom-link] creating index, cause [api], templates [], shards [1]/[1]
+[2021-07-19T21:21:33,345][INFO ][o.e.c.r.a.AllocationService] [LAPTOP-2EM23IOC] updating number_of_replicas to [0] for indices [.apm-custom-link]
+[2021-07-19T21:21:33,988][INFO ][o.e.c.m.MetadataMappingService] [LAPTOP-2EM23IOC] [.kibana_task_manager_7.13.3_001/MotZbGn9TjGit5GKYuXiKA] update_mapping [_doc]
+[2021-07-19T21:21:34,116][INFO ][o.e.c.m.MetadataMappingService] [LAPTOP-2EM23IOC] [.kibana_7.13.3_001/z7x8sIdmTeuDrpIb4Fw79w] update_mapping [_doc]
+[2021-07-19T21:21:34,360][INFO ][o.e.c.r.a.AllocationService] [LAPTOP-2EM23IOC] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.apm-custom-link][0]]]).
+[2021-07-19T21:21:34,602][INFO ][o.e.c.m.MetadataMappingService] [LAPTOP-2EM23IOC] [.kibana_7.13.3_001/z7x8sIdmTeuDrpIb4Fw79w] update_mapping [_doc]
+[2021-07-19T21:21:34,622][INFO ][o.e.c.m.MetadataMappingService] [LAPTOP-2EM23IOC] [.kibana_7.13.3_001/z7x8sIdmTeuDrpIb4Fw79w] update_mapping [_doc]
+[2021-07-19T21:21:34,745][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:21:35,618][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [LAPTOP-2EM23IOC] adding index lifecycle policy [kibana-event-log-policy]
+[2021-07-19T21:21:35,874][INFO ][o.e.c.m.MetadataIndexTemplateService] [LAPTOP-2EM23IOC] adding template [.kibana-event-log-7.13.3-template] for index patterns [.kibana-event-log-7.13.3-*]
+[2021-07-19T21:21:36,088][INFO ][o.e.c.m.MetadataCreateIndexService] [LAPTOP-2EM23IOC] [.kibana-event-log-7.13.3-000001] creating index, cause [api], templates [.kibana-event-log-7.13.3-template], shards [1]/[1]
+[2021-07-19T21:21:36,093][INFO ][o.e.c.r.a.AllocationService] [LAPTOP-2EM23IOC] updating number_of_replicas to [0] for indices [.kibana-event-log-7.13.3-000001]
+[2021-07-19T21:21:36,434][INFO ][o.e.x.i.IndexLifecycleTransition] [LAPTOP-2EM23IOC] moving index [.kibana-event-log-7.13.3-000001] from [null] to [{"phase":"new","action":"complete","name":"complete"}] in policy [kibana-event-log-policy]
+[2021-07-19T21:21:36,659][INFO ][o.e.c.r.a.AllocationService] [LAPTOP-2EM23IOC] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.kibana-event-log-7.13.3-000001][0]]]).
+[2021-07-19T21:21:36,803][INFO ][o.e.x.i.IndexLifecycleTransition] [LAPTOP-2EM23IOC] moving index [.kibana-event-log-7.13.3-000001] from [{"phase":"new","action":"complete","name":"complete"}] to [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] in policy [kibana-event-log-policy]
+[2021-07-19T21:21:36,959][INFO ][o.e.x.i.IndexLifecycleTransition] [LAPTOP-2EM23IOC] moving index [.kibana-event-log-7.13.3-000001] from [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] to [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}] in policy [kibana-event-log-policy]
+[2021-07-19T21:21:37,720][INFO ][o.e.c.m.MetadataCreateIndexService] [LAPTOP-2EM23IOC] [.ds-ilm-history-5-2021.07.19-000001] creating index, cause [initialize_data_stream], templates [ilm-history], shards [1]/[0]
+[2021-07-19T21:21:37,756][INFO ][o.e.c.m.MetadataCreateDataStreamService] [LAPTOP-2EM23IOC] adding data stream [ilm-history-5] with write index [.ds-ilm-history-5-2021.07.19-000001] and backing indices []
+[2021-07-19T21:21:38,091][INFO ][o.e.x.i.IndexLifecycleTransition] [LAPTOP-2EM23IOC] moving index [.ds-ilm-history-5-2021.07.19-000001] from [null] to [{"phase":"new","action":"complete","name":"complete"}] in policy [ilm-history-ilm-policy]
+[2021-07-19T21:21:38,346][INFO ][o.e.x.i.IndexLifecycleTransition] [LAPTOP-2EM23IOC] moving index [.ds-ilm-history-5-2021.07.19-000001] from [{"phase":"new","action":"complete","name":"complete"}] to [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] in policy [ilm-history-ilm-policy]
+[2021-07-19T21:21:38,604][INFO ][o.e.c.r.a.AllocationService] [LAPTOP-2EM23IOC] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.ds-ilm-history-5-2021.07.19-000001][0]]]).
+[2021-07-19T21:21:38,732][INFO ][o.e.x.i.IndexLifecycleTransition] [LAPTOP-2EM23IOC] moving index [.ds-ilm-history-5-2021.07.19-000001] from [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] to [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}] in policy [ilm-history-ilm-policy]
+[2021-07-19T21:22:04,811][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:22:34,825][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:23:04,837][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:23:34,858][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:24:04,879][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:24:34,888][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:25:04,909][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:25:34,928][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:26:04,944][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:26:34,961][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:27:05,003][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:27:35,025][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:28:05,046][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:28:33,600][ERROR][o.e.x.i.IndexLifecycleRunner] [LAPTOP-2EM23IOC] policy [ilm-history-ilm-policy] for index [.ds-ilm-history-5-2021.07.19-000001] failed on step [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}]. Moving to ERROR step
+org.elasticsearch.cluster.block.ClusterBlockException: index [.ds-ilm-history-5-2021.07.19-000001] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];
+	at org.elasticsearch.cluster.block.ClusterBlocks.indicesBlockedException(ClusterBlocks.java:212) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.checkBlock(TransportRolloverAction.java:76) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.checkBlock(TransportRolloverAction.java:53) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction$AsyncSingleAction.doStart(TransportMasterNodeAction.java:127) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction.doExecute(TransportMasterNodeAction.java:104) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction.doExecute(TransportMasterNodeAction.java:46) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:173) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.ActionFilter$Simple.apply(ActionFilter.java:42) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:122) [x-pack-security-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:149) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:77) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:86) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:66) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeAsyncWithOrigin(ClientHelper.java:134) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeWithHeadersAsync(ClientHelper.java:192) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.LifecyclePolicySecurityClient.doExecute(LifecyclePolicySecurityClient.java:52) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.execute(AbstractClient.java:1286) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.rolloverIndex(AbstractClient.java:1798) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ilm.WaitForRolloverReadyStep.evaluateCondition(WaitForRolloverReadyStep.java:156) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleRunner.runPeriodicStep(IndexLifecycleRunner.java:176) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleService.triggerPolicies(IndexLifecycleService.java:334) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleService.triggered(IndexLifecycleService.java:272) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.scheduler.SchedulerEngine.notifyListeners(SchedulerEngine.java:184) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.scheduler.SchedulerEngine$ActiveSchedule.run(SchedulerEngine.java:217) [x-pack-core-7.13.3.jar:7.13.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[2021-07-19T21:28:33,694][ERROR][o.e.x.i.IndexLifecycleRunner] [LAPTOP-2EM23IOC] policy [kibana-event-log-policy] for index [.kibana-event-log-7.13.3-000001] failed on step [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}]. Moving to ERROR step
+org.elasticsearch.cluster.block.ClusterBlockException: index [.kibana-event-log-7.13.3-000001] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];
+	at org.elasticsearch.cluster.block.ClusterBlocks.indicesBlockedException(ClusterBlocks.java:212) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.checkBlock(TransportRolloverAction.java:76) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.checkBlock(TransportRolloverAction.java:53) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction$AsyncSingleAction.doStart(TransportMasterNodeAction.java:127) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction.doExecute(TransportMasterNodeAction.java:104) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction.doExecute(TransportMasterNodeAction.java:46) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:173) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.ActionFilter$Simple.apply(ActionFilter.java:42) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:122) [x-pack-security-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:149) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:77) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:86) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:66) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeAsyncWithOrigin(ClientHelper.java:134) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeWithHeadersAsync(ClientHelper.java:192) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.LifecyclePolicySecurityClient.doExecute(LifecyclePolicySecurityClient.java:52) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.execute(AbstractClient.java:1286) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.rolloverIndex(AbstractClient.java:1798) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ilm.WaitForRolloverReadyStep.evaluateCondition(WaitForRolloverReadyStep.java:156) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleRunner.runPeriodicStep(IndexLifecycleRunner.java:176) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleService.triggerPolicies(IndexLifecycleService.java:334) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleService.triggered(IndexLifecycleService.java:272) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.scheduler.SchedulerEngine.notifyListeners(SchedulerEngine.java:184) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.scheduler.SchedulerEngine$ActiveSchedule.run(SchedulerEngine.java:217) [x-pack-core-7.13.3.jar:7.13.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[2021-07-19T21:28:35,063][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.3gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:28:39,427][ERROR][o.e.x.i.h.ILMHistoryStore] [LAPTOP-2EM23IOC] failed to index 2 items into ILM history index
+java.lang.IllegalArgumentException: autoGeneratedTimestamp should not be set externally
+	at org.elasticsearch.action.bulk.TransportBulkAction.doInternalExecute(TransportBulkAction.java:187) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.bulk.TransportBulkAction.doExecute(TransportBulkAction.java:162) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.bulk.TransportBulkAction.doExecute(TransportBulkAction.java:89) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:173) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.ActionFilter$Simple.apply(ActionFilter.java:42) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:122) [x-pack-security-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:149) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:77) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:86) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:66) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.FilterClient.doExecute(FilterClient.java:54) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.OriginSettingClient.doExecute(OriginSettingClient.java:40) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.FilterClient.doExecute(FilterClient.java:54) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.OriginSettingClient.doExecute(OriginSettingClient.java:40) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.bulk(AbstractClient.java:484) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.bulk.Retry$RetryHandler.execute(Retry.java:192) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.bulk.Retry$RetryHandler.lambda$retry$3(Retry.java:127) [elasticsearch-7.13.3.jar:7.13.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[2021-07-19T21:29:05,085][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:29:35,099][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:30:05,185][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:30:35,206][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:31:05,236][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:31:35,256][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:32:05,265][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:32:35,279][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:33:05,302][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:33:35,320][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:34:05,335][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:34:35,351][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:35:05,372][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:35:35,390][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:36:05,411][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:36:35,433][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:37:05,443][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:37:35,453][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:38:05,463][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:38:33,566][INFO ][o.e.x.i.IndexLifecycleRunner] [LAPTOP-2EM23IOC] policy [ilm-history-ilm-policy] for index [.ds-ilm-history-5-2021.07.19-000001] on an error step due to a transient error, moving back to the failed step [check-rollover-ready] for execution. retry attempt [1]
+[2021-07-19T21:38:33,587][INFO ][o.e.x.i.IndexLifecycleRunner] [LAPTOP-2EM23IOC] policy [kibana-event-log-policy] for index [.kibana-event-log-7.13.3-000001] on an error step due to a transient error, moving back to the failed step [check-rollover-ready] for execution. retry attempt [1]
+[2021-07-19T21:38:35,483][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:39:05,500][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:39:35,522][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:40:05,539][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:40:35,560][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:41:05,569][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:41:35,596][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:42:05,613][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:42:35,631][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:43:05,653][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:43:35,670][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:44:05,688][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:44:35,699][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:45:05,723][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:45:35,731][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:46:05,743][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:46:35,758][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 6.2gb[2.8%], all indices on this node will be marked read-only
+[2021-07-19T21:47:05,782][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:47:35,792][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:48:05,812][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:48:33,570][ERROR][o.e.x.i.IndexLifecycleRunner] [LAPTOP-2EM23IOC] policy [ilm-history-ilm-policy] for index [.ds-ilm-history-5-2021.07.19-000001] failed on step [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}]. Moving to ERROR step
+org.elasticsearch.cluster.block.ClusterBlockException: index [.ds-ilm-history-5-2021.07.19-000001] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];
+	at org.elasticsearch.cluster.block.ClusterBlocks.indicesBlockedException(ClusterBlocks.java:212) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.checkBlock(TransportRolloverAction.java:76) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.checkBlock(TransportRolloverAction.java:53) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction$AsyncSingleAction.doStart(TransportMasterNodeAction.java:127) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction.doExecute(TransportMasterNodeAction.java:104) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction.doExecute(TransportMasterNodeAction.java:46) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:173) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.ActionFilter$Simple.apply(ActionFilter.java:42) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:122) [x-pack-security-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:149) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:77) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:86) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:66) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeAsyncWithOrigin(ClientHelper.java:134) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeWithHeadersAsync(ClientHelper.java:192) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.LifecyclePolicySecurityClient.doExecute(LifecyclePolicySecurityClient.java:52) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.execute(AbstractClient.java:1286) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.rolloverIndex(AbstractClient.java:1798) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ilm.WaitForRolloverReadyStep.evaluateCondition(WaitForRolloverReadyStep.java:156) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleRunner.runPeriodicStep(IndexLifecycleRunner.java:176) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleService.triggerPolicies(IndexLifecycleService.java:334) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleService.triggered(IndexLifecycleService.java:272) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.scheduler.SchedulerEngine.notifyListeners(SchedulerEngine.java:184) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.scheduler.SchedulerEngine$ActiveSchedule.run(SchedulerEngine.java:217) [x-pack-core-7.13.3.jar:7.13.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[2021-07-19T21:48:33,657][ERROR][o.e.x.i.IndexLifecycleRunner] [LAPTOP-2EM23IOC] policy [kibana-event-log-policy] for index [.kibana-event-log-7.13.3-000001] failed on step [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}]. Moving to ERROR step
+org.elasticsearch.cluster.block.ClusterBlockException: index [.kibana-event-log-7.13.3-000001] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];
+	at org.elasticsearch.cluster.block.ClusterBlocks.indicesBlockedException(ClusterBlocks.java:212) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.checkBlock(TransportRolloverAction.java:76) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.checkBlock(TransportRolloverAction.java:53) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction$AsyncSingleAction.doStart(TransportMasterNodeAction.java:127) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction.doExecute(TransportMasterNodeAction.java:104) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction.doExecute(TransportMasterNodeAction.java:46) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:173) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.ActionFilter$Simple.apply(ActionFilter.java:42) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:122) [x-pack-security-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:149) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:77) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:86) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:66) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeAsyncWithOrigin(ClientHelper.java:134) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeWithHeadersAsync(ClientHelper.java:192) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.LifecyclePolicySecurityClient.doExecute(LifecyclePolicySecurityClient.java:52) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.execute(AbstractClient.java:1286) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.rolloverIndex(AbstractClient.java:1798) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ilm.WaitForRolloverReadyStep.evaluateCondition(WaitForRolloverReadyStep.java:156) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleRunner.runPeriodicStep(IndexLifecycleRunner.java:176) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleService.triggerPolicies(IndexLifecycleService.java:334) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleService.triggered(IndexLifecycleService.java:272) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.scheduler.SchedulerEngine.notifyListeners(SchedulerEngine.java:184) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.scheduler.SchedulerEngine$ActiveSchedule.run(SchedulerEngine.java:217) [x-pack-core-7.13.3.jar:7.13.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[2021-07-19T21:48:35,838][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:48:36,577][ERROR][o.e.x.i.h.ILMHistoryStore] [LAPTOP-2EM23IOC] failed to index 2 items into ILM history index
+java.lang.IllegalArgumentException: autoGeneratedTimestamp should not be set externally
+	at org.elasticsearch.action.bulk.TransportBulkAction.doInternalExecute(TransportBulkAction.java:187) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.bulk.TransportBulkAction.doExecute(TransportBulkAction.java:162) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.bulk.TransportBulkAction.doExecute(TransportBulkAction.java:89) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:173) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.ActionFilter$Simple.apply(ActionFilter.java:42) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:122) [x-pack-security-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:149) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:77) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:86) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:66) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.FilterClient.doExecute(FilterClient.java:54) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.OriginSettingClient.doExecute(OriginSettingClient.java:40) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.FilterClient.doExecute(FilterClient.java:54) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.OriginSettingClient.doExecute(OriginSettingClient.java:40) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.bulk(AbstractClient.java:484) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.bulk.Retry$RetryHandler.execute(Retry.java:192) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.bulk.Retry$RetryHandler.lambda$retry$3(Retry.java:127) [elasticsearch-7.13.3.jar:7.13.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[2021-07-19T21:49:05,850][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:49:35,874][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:50:05,885][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:50:35,905][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:51:05,917][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:51:35,925][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:52:05,937][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:52:35,947][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:53:05,961][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:53:35,982][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:54:05,993][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:54:35,999][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:55:06,015][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:55:36,029][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:56:06,043][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:56:36,052][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:57:06,068][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:57:36,083][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:58:06,102][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:58:33,570][INFO ][o.e.x.i.IndexLifecycleRunner] [LAPTOP-2EM23IOC] policy [ilm-history-ilm-policy] for index [.ds-ilm-history-5-2021.07.19-000001] on an error step due to a transient error, moving back to the failed step [check-rollover-ready] for execution. retry attempt [2]
+[2021-07-19T21:58:33,576][INFO ][o.e.x.i.IndexLifecycleRunner] [LAPTOP-2EM23IOC] policy [kibana-event-log-policy] for index [.kibana-event-log-7.13.3-000001] on an error step due to a transient error, moving back to the failed step [check-rollover-ready] for execution. retry attempt [2]
+[2021-07-19T21:58:36,124][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:59:06,143][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T21:59:36,152][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:00:06,167][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:00:36,188][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:01:06,194][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:01:36,221][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:02:06,243][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:02:36,258][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:03:06,282][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:03:36,293][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:04:06,299][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:04:36,317][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:05:06,335][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:05:36,349][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:06:06,375][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:06:36,394][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:07:06,413][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:07:36,424][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:08:06,445][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:08:33,569][ERROR][o.e.x.i.IndexLifecycleRunner] [LAPTOP-2EM23IOC] policy [ilm-history-ilm-policy] for index [.ds-ilm-history-5-2021.07.19-000001] failed on step [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}]. Moving to ERROR step
+org.elasticsearch.cluster.block.ClusterBlockException: index [.ds-ilm-history-5-2021.07.19-000001] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];
+	at org.elasticsearch.cluster.block.ClusterBlocks.indicesBlockedException(ClusterBlocks.java:212) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.checkBlock(TransportRolloverAction.java:76) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.checkBlock(TransportRolloverAction.java:53) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction$AsyncSingleAction.doStart(TransportMasterNodeAction.java:127) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction.doExecute(TransportMasterNodeAction.java:104) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction.doExecute(TransportMasterNodeAction.java:46) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:173) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.ActionFilter$Simple.apply(ActionFilter.java:42) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:122) [x-pack-security-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:149) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:77) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:86) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:66) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeAsyncWithOrigin(ClientHelper.java:134) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeWithHeadersAsync(ClientHelper.java:192) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.LifecyclePolicySecurityClient.doExecute(LifecyclePolicySecurityClient.java:52) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.execute(AbstractClient.java:1286) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.rolloverIndex(AbstractClient.java:1798) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ilm.WaitForRolloverReadyStep.evaluateCondition(WaitForRolloverReadyStep.java:156) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleRunner.runPeriodicStep(IndexLifecycleRunner.java:176) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleService.triggerPolicies(IndexLifecycleService.java:334) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleService.triggered(IndexLifecycleService.java:272) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.scheduler.SchedulerEngine.notifyListeners(SchedulerEngine.java:184) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.scheduler.SchedulerEngine$ActiveSchedule.run(SchedulerEngine.java:217) [x-pack-core-7.13.3.jar:7.13.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[2021-07-19T22:08:33,611][ERROR][o.e.x.i.IndexLifecycleRunner] [LAPTOP-2EM23IOC] policy [kibana-event-log-policy] for index [.kibana-event-log-7.13.3-000001] failed on step [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}]. Moving to ERROR step
+org.elasticsearch.cluster.block.ClusterBlockException: index [.kibana-event-log-7.13.3-000001] blocked by: [TOO_MANY_REQUESTS/12/disk usage exceeded flood-stage watermark, index has read-only-allow-delete block];
+	at org.elasticsearch.cluster.block.ClusterBlocks.indicesBlockedException(ClusterBlocks.java:212) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.checkBlock(TransportRolloverAction.java:76) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.checkBlock(TransportRolloverAction.java:53) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction$AsyncSingleAction.doStart(TransportMasterNodeAction.java:127) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction.doExecute(TransportMasterNodeAction.java:104) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.master.TransportMasterNodeAction.doExecute(TransportMasterNodeAction.java:46) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:173) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.ActionFilter$Simple.apply(ActionFilter.java:42) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:122) [x-pack-security-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:149) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:77) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:86) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:66) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeAsyncWithOrigin(ClientHelper.java:134) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ClientHelper.executeWithHeadersAsync(ClientHelper.java:192) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.LifecyclePolicySecurityClient.doExecute(LifecyclePolicySecurityClient.java:52) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.execute(AbstractClient.java:1286) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.rolloverIndex(AbstractClient.java:1798) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.ilm.WaitForRolloverReadyStep.evaluateCondition(WaitForRolloverReadyStep.java:156) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleRunner.runPeriodicStep(IndexLifecycleRunner.java:176) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleService.triggerPolicies(IndexLifecycleService.java:334) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.ilm.IndexLifecycleService.triggered(IndexLifecycleService.java:272) [x-pack-ilm-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.scheduler.SchedulerEngine.notifyListeners(SchedulerEngine.java:184) [x-pack-core-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.core.scheduler.SchedulerEngine$ActiveSchedule.run(SchedulerEngine.java:217) [x-pack-core-7.13.3.jar:7.13.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[2021-07-19T22:08:36,455][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:08:38,637][ERROR][o.e.x.i.h.ILMHistoryStore] [LAPTOP-2EM23IOC] failed to index 2 items into ILM history index
+java.lang.IllegalArgumentException: autoGeneratedTimestamp should not be set externally
+	at org.elasticsearch.action.bulk.TransportBulkAction.doInternalExecute(TransportBulkAction.java:187) ~[elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.bulk.TransportBulkAction.doExecute(TransportBulkAction.java:162) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.bulk.TransportBulkAction.doExecute(TransportBulkAction.java:89) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:173) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.ActionFilter$Simple.apply(ActionFilter.java:42) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:122) [x-pack-security-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:171) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:149) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:77) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:86) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:66) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.FilterClient.doExecute(FilterClient.java:54) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.OriginSettingClient.doExecute(OriginSettingClient.java:40) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.FilterClient.doExecute(FilterClient.java:54) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.OriginSettingClient.doExecute(OriginSettingClient.java:40) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:402) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.client.support.AbstractClient.bulk(AbstractClient.java:484) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.bulk.Retry$RetryHandler.execute(Retry.java:192) [elasticsearch-7.13.3.jar:7.13.3]
+	at org.elasticsearch.action.bulk.Retry$RetryHandler.lambda$retry$3(Retry.java:127) [elasticsearch-7.13.3.jar:7.13.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[2021-07-19T22:09:06,465][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:09:36,471][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:10:06,485][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:10:36,505][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:11:06,522][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:11:36,544][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:12:06,565][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:12:36,583][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:13:06,594][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:13:36,598][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:14:06,621][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:14:36,633][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:15:06,651][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:15:36,675][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:16:06,698][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:16:36,722][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:17:06,748][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:17:36,775][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:18:06,806][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:18:33,561][INFO ][o.e.x.i.IndexLifecycleRunner] [LAPTOP-2EM23IOC] policy [ilm-history-ilm-policy] for index [.ds-ilm-history-5-2021.07.19-000001] on an error step due to a transient error, moving back to the failed step [check-rollover-ready] for execution. retry attempt [3]
+[2021-07-19T22:18:33,568][INFO ][o.e.x.i.IndexLifecycleRunner] [LAPTOP-2EM23IOC] policy [kibana-event-log-policy] for index [.kibana-event-log-7.13.3-000001] on an error step due to a transient error, moving back to the failed step [check-rollover-ready] for execution. retry attempt [3]
+[2021-07-19T22:18:36,824][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:19:06,846][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:19:36,872][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:20:06,898][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:20:36,907][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:21:06,929][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:21:36,940][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:22:06,958][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:22:36,966][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:23:06,986][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:23:37,006][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:24:07,018][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:24:37,039][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:25:07,057][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:25:37,074][WARN ][o.e.c.r.a.DiskThresholdMonitor] [LAPTOP-2EM23IOC] flood stage disk watermark [95%] exceeded on [8JxikF5BTd-wFlAx5YbWGQ][LAPTOP-2EM23IOC][C:\Users\hj243\Downloads\elasticsearch-7.13.3\data\nodes\0] free: 5.2gb[2.3%], all indices on this node will be marked read-only
+[2021-07-19T22:25:40,150][INFO ][o.e.x.m.p.NativeController] [LAPTOP-2EM23IOC] Native controller process has stopped - no new native processes can be started
+[2021-07-19T22:25:40,185][INFO ][o.e.b.Bootstrap          ] [LAPTOP-2EM23IOC] running graceful exit on windows
+[2021-07-19T22:25:40,202][INFO ][o.e.n.Node               ] [LAPTOP-2EM23IOC] stopping ...
+[2021-07-19T22:25:40,358][INFO ][o.e.x.w.WatcherService   ] [LAPTOP-2EM23IOC] stopping watch service, reason [shutdown initiated]
+[2021-07-19T22:25:40,395][INFO ][o.e.x.w.WatcherLifeCycleService] [LAPTOP-2EM23IOC] watcher has stopped and shutdown
+[2021-07-19T22:25:41,002][INFO ][o.e.n.Node               ] [LAPTOP-2EM23IOC] stopped
+[2021-07-19T22:25:41,005][INFO ][o.e.n.Node               ] [LAPTOP-2EM23IOC] closing ...
+[2021-07-19T22:25:41,277][INFO ][o.e.n.Node               ] [LAPTOP-2EM23IOC] closed

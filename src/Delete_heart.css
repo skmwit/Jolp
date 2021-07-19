@@ -1,0 +1,29 @@
+.checkoutProduct {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  
+}
+.checkoutProduct__info {
+  padding-left: 10px;
+  width: 100%;
+}
+
+.checkoutProduct__image {
+  object-fit: contain;
+  height: 180px;
+  width: 180px;
+}
+
+.checkoutProduct__title {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.checkoutProduct__heart{
+  position : relative;
+  top: -30px;
+  left : 130px;
+}

@@ -1,0 +1,26 @@
+.checkout {
+  padding: 0px 40px;
+  background-color:white;
+  height: max-content;
+}
+.checkout__width{
+  width: 40%;
+  max-width: 40%;
+  min-width: 40%;
+}
+
+/* .checkout__title {
+  color: #ff00d4;
+  display: flex;
+  font-size: 40px !important;
+} */
+.checkout__heart {
+  color: #ff00d4;
+  font-size: 40px !important;
+  margin: 10px 30px;
+}
+
+.checkout__left{
+  display:flex;
+}
+
