@@ -26,7 +26,6 @@ function App() {
             <Header />
             <Checkout />
           </Route>
-          
           <Route path="/">
             <Header />
             <Home />

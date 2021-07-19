@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
-
 const mongoose = require('mongoose')
 mongoose.connect('mongodb+srv://user1:sm0000@cluster0.jg6ur.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
