@@ -1,8 +1,0 @@
-{
-  "id": "savedObjectsTaggingOss",
-  "version": "kibana",
-  "server": false,
-  "ui": true,
-  "requiredPlugins": [],
-  "optionalPlugins": ["savedObjects"]
-}

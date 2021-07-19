@@ -1,2 +1,0 @@
-[2021-07-19T21:21:32,499][DEPRECATION][o.e.d.r.RestController   ] [LAPTOP-2EM23IOC] Legacy index templates are deprecated in favor of composable templates.
-[2021-07-19T21:21:36,072][DEPRECATION][o.e.d.c.m.MetadataCreateIndexService] [LAPTOP-2EM23IOC] index name [.kibana-event-log-7.13.3-000001] starts with a dot '.', in the next major version, index names starting with a dot are reserved for hidden indices and system indices
