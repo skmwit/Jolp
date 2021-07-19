@@ -1,2 +1,12 @@
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.exe filter=lfs diff=lfs merge=lfs -text
+C:/Users/hj243/OneDrive/바탕 filter=lfs diff=lfs merge=lfs -text
+C:/Users/hj243/OneDrive/바탕 filter=lfs diff=lfs merge=lfs -text
+C:/Users/hj243/OneDrive/바탕 filter=lfs diff=lfs merge=lfs -text
+otgolazo/web/elasticsearch-7.13.3 filter=lfs diff=lfs merge=lfs -text
+elasticsearch-7.13.3/modules/ingest-geoip/GeoLite2-City.mmdb filter=lfs diff=lfs merge=lfs -text
+kibana-7.13.3-windows-x86_64/node/node.exe filter=lfs diff=lfs merge=lfs -text
+elasticsearch-7.13.3/jdk/lib/modules filter=lfs diff=lfs merge=lfs -text
+kibana-7.13.3-windows-x86_64/x-pack/plugins/reporting/chromium/chrome-win/chrome.dll filter=lfs diff=lfs merge=lfs -text
+kibana-7.13.3-windows-x86_64/x-pack/plugins/reporting/chromium/chrome-win/interactive_ui_tests.exe filter=lfs diff=lfs merge=lfs -text
+kibana-7.13.3-windows-x86_64/ filter=lfs diff=lfs merge=lfs -text
