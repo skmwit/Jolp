@@ -1,7 +1,0 @@
-{
-    "id": "core",
-    "summary": "The core plugin has core functionality",
-    "version": "kibana",
-    "serviceFolders": ["http", "saved_objects", "chrome", "application"]
-  }
-  

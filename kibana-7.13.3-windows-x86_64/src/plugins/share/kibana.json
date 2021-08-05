@@ -1,8 +1,0 @@
-{
-  "id": "share",
-  "version": "kibana",
-  "server": true,
-  "ui": true,
-  "requiredBundles": ["kibanaUtils"],
-  "optionalPlugins": ["securityOss"]
-}

@@ -1,7 +1,0 @@
-title: UpdatePackagePolicy
-allOf:
-  - type: object
-    properties:
-      version:
-        type: string
-  - $ref: ./new_package_policy.yaml
