@@ -1,0 +1,21 @@
+mongo-url = "mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb" 
+elasticsearch-urls = ["http://127.0.0.1:9200"]
+elasticsearch-max-conns = 4
+elasticsearch-max-seconds = 5
+elasticsearch-max-bytes = 8000000
+dropped-collections = false
+dropped-databases = false
+
+namespace-regex = "^대상DB" #포함 할 패턴
+#namespace-exclude-regex = '^대상DB.포함하지않을컬렉션패턴*'
+direct-read-dynamic-exclude-regex = '^대상DB.포함하지않을컬렉션패턴*'
+direct-read-namespaces = ["대상DB.컬렉션"] #이미 있는 데이터 중에 넣을 것
+
+
+
+
+[logs]
+info = "로그위치/info.log"
+trace = "로그위치/trace.log"
+error = "로그위치/error.log"
+warn = "로그위치/warn.log"
