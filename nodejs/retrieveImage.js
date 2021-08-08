@@ -19,6 +19,6 @@ conn.once('open', function(){
     });
     readstream.pipe(fs_write_stream);
     fs_write_stream.on('close', function(file){
-        console.log('Written to DB');
+        console.log('Retrieved from DB');
     });
 });
