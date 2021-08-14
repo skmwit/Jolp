@@ -1,5 +1,0 @@
-setup.py
-captioning.egg-info/PKG-INFO
-captioning.egg-info/SOURCES.txt
-captioning.egg-info/dependency_links.txt
-captioning.egg-info/top_level.txt
