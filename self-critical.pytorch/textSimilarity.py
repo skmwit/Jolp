@@ -6,27 +6,29 @@ from sklearn.metrics.pairwise import cosine_similarity
 import time
 import json
 import numpy as np
+import sys
 
-sentence = "기장이 긴 검정색 슬랙스"
+# sentence = "아이보리 스키니"
+sentence=sys.argv[1]
 sentences = {}
 
 # json 불러와서 image_id와 caption 불러오기
-with open("self-critical.pytorch/vis/vis.json") as json_file:
+with open("/Users/irene/Image-Captioning Demo/self-critical.pytorch/vis/vis.json") as json_file:
     json_data = json.load(json_file)
     for i in range(len(json_data)):
         sentences[json_data[i]['image_id']]=json_data[i]['caption']
 
 komoran = Komoran()
 
-print("[komoran 형태소 분석기 -> 코사인 유사도]")
-startTime = time.time()
+# print("[komoran 형태소 분석기 -> 코사인 유사도]")
+# startTime = time.time()
 
 # komoran 형태소 분석기
 # 단어와 형태소 모두 출력
 comTk = komoran.pos(sentence)
 comTk = [''.join(list(t)) for t in comTk]
 comTk = ' '.join(comTk)
-print("\t형태소 분석 결과 : ",comTk)
+# print("\t형태소 분석 결과 : ",comTk)
 
 ttks = []
 for sen in list(sentences.values()):
@@ -54,9 +56,9 @@ similarities = []
 for i in range(n):
     similarities.append(cosine_similarity(tfidf_matrixs[i][0:1], tfidf_matrixs[i][1:2][0][0]))
 
-endTime = time.time()
-processTime = endTime - startTime
-print(f"\tkomoran 소요 시간 : {processTime}")
+# endTime = time.time()
+# processTime = endTime - startTime
+# print(f"\tkomoran 소요 시간 : {processTime}")
 
 # 가장 유사도 높은 문장 구하기
 # pair = {(image_id, similarity_score):caption}
@@ -65,7 +67,7 @@ for i in range(n):
     pair[(list(sentences.keys())[i],round(np.float64(similarities[i]).item(), 7))]=list(sentences.values())[i]
 
 # key는 (image_id, similarity_score)로 이루어진 튜플이다.
-# similarity_score 기준으로 오름차순 정렬한다.
+# similarity_score 기준으로 내름차순 정렬한다.
 pair = sorted(pair.items(), key=lambda item: item[0][1], reverse=True)
 result = pair[:3]
 
@@ -81,6 +83,8 @@ for res in result:
     "similarity_score":res[0][1]
 })
 
-# json으로 dump
-with open("result.json", 'w') as f:
-    json.dump(result_list, f, ensure_ascii=False)
+# # json으로 dump
+# with open("result.json", 'w') as f:
+#     json.dump(result_list, f, ensure_ascii=False)
+# print(json.dumps(result_list, ensure_ascii=False))
+print(json.dumps(result_list))
