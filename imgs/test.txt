@@ -1,0 +1,69 @@
+Warning: coco-caption not available
+DataLoaderRaw loading images from folder:  pants/img
+0
+listing all images in directory pants/img
+DataLoaderRaw found  30  images
+cp "pants/img/img13.jpg" vis/imgs/img1.jpg
+image 1: 와이드 롱 하이웨스트 심플한 진청 데님
+cp "pants/img/img28.jpg" vis/imgs/img2.jpg
+image 2: 연청 찢어진 롱 데일리 데님
+cp "pants/img/img11.jpg" vis/imgs/img3.jpg
+image 3: 짧은 일자 찢어진 연청 데님
+cp "pants/img/img1.jpg" vis/imgs/img4.jpg
+image 4: 와이드 롱 하이웨스트 핀턱 슬랙스
+cp "pants/img/img10.jpg" vis/imgs/img5.jpg
+image 5: 짧은 와이드 하이웨스트 아이보리 면바지 슬랙스
+cp "pants/img/img6.jpg" vis/imgs/img6.jpg
+image 6: 와이드 롱 하이웨스트 심플한 핀턱 크림 면바지
+cp "pants/img/img30.jpg" vis/imgs/img7.jpg
+image 7: 블랙 찰랑거리는 롱 트레이닝 팬츠
+cp "pants/img/img20.jpg" vis/imgs/img8.jpg
+image 8: 와이드 롱 심플한 진청 청바지
+cp "pants/img/img7.jpg" vis/imgs/img9.jpg
+image 9: 와이드 롱 심플한 크림 핀턱 면바지 슬랙스
+cp "pants/img/img5.jpg" vis/imgs/img10.jpg
+image 10: 블랙 찰랑거리는 롱 트레이닝 팬츠
+evaluating validation preformance... 10/30 (0.000000)
+cp "pants/img/img22.jpg" vis/imgs/img11.jpg
+image 11: 스키니 짧은 하이웨스트 중청 청바지
+cp "pants/img/img19.jpg" vis/imgs/img12.jpg
+image 12: 와이드 롱 심플한 진청 청바지
+cp "pants/img/img2.jpg" vis/imgs/img13.jpg
+image 13: 연청 찢어진 롱 데일리 데님
+cp "pants/img/img3.jpg" vis/imgs/img14.jpg
+image 14: 연청 찢어진 롱 데일리 데님
+cp "pants/img/img25.jpg" vis/imgs/img15.jpg
+image 15: 와이드 롱 하이웨스트 심플한 진청 데님
+cp "pants/img/img12.jpg" vis/imgs/img16.jpg
+image 16: 와이드 찢어진 특이한 블랙 면바지 조거 팬츠
+cp "pants/img/img18.jpg" vis/imgs/img17.jpg
+image 17: 블랙 스키니 데일리 면바지
+cp "pants/img/img4.jpg" vis/imgs/img18.jpg
+image 18: 롱 와이드 하이웨스트 중청
+cp "pants/img/img26.jpg" vis/imgs/img19.jpg
+image 19: 와이드 롱 하이웨스트 핀턱 슬랙스
+cp "pants/img/img15.jpg" vis/imgs/img20.jpg
+image 20: 와이드 롱 하이웨스트 심플한 진청 데님
+evaluating validation preformance... 20/30 (0.000000)
+cp "pants/img/img17.jpg" vis/imgs/img21.jpg
+image 21: 스키니 하이웨스트 롱 특이한 진청 청바지
+cp "pants/img/img27.jpg" vis/imgs/img22.jpg
+image 22: 연청 찢어진 롱 데일리 데님
+cp "pants/img/img24.jpg" vis/imgs/img23.jpg
+image 23: 짧은 와이드 크림 면바지
+cp "pants/img/img8.jpg" vis/imgs/img24.jpg
+image 24: 와이드 찢어진 롤업 데일리 연청 데님
+cp "pants/img/img14.jpg" vis/imgs/img25.jpg
+image 25: 스키니 짧은 하이웨스트 찢어진 연청 청바지
+cp "pants/img/img29.jpg" vis/imgs/img26.jpg
+image 26: 롱 와이드 하이웨스트 중청
+cp "pants/img/img9.jpg" vis/imgs/img27.jpg
+image 27: 와이드 롱 심플한 핀턱 크림 면바지 슬랙스
+cp "pants/img/img23.jpg" vis/imgs/img28.jpg
+image 28: 와이드 롱 하이웨스트 핀턱 슬랙스
+cp "pants/img/img21.jpg" vis/imgs/img29.jpg
+image 29: 연청 찢어진 롱 데일리 데님
+cp "pants/img/img16.jpg" vis/imgs/img30.jpg
+image 30: 아이보리 스키니 데일리 면바지
+evaluating validation preformance... 30/30 (0.000000)
+loss:  0.0
