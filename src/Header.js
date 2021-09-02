@@ -20,10 +20,10 @@ function Header() {
 
   const [{ basket, user, drawer }, dispatch] = useStateValue();
   const [query, setQuery] = useState('');
+  const [color, setColor]=useState({color: '#A98598'})
   const [isOpen, setIsOpen] = useState(false);
   const [keys, setKeys] = useState([]);
   const [loading, setLoading] = useState(false);
-
 
   const modal_open = () => {
     setIsOpen(true);
@@ -116,9 +116,12 @@ function Header() {
         
       <Fade in={isOpen}>
             <div className='modal_frame'>
-              <img src={'../../img/img'+keys[0]+'.jpg'} className='modal_img' />
-              <img src={'../../img/img'+keys[1]+'.jpg'} className='modal_img' />
-              <img src={'../../img/img'+keys[2]+'.jpg'} className='modal_img' />
+              <div className='query_result'><h4>검색하신</h4><h4 style={color}>{query}</h4><h4>와(과) 가장 유사한 옷입니다.</h4></div>
+              <div>
+                <img src={'../../img/img'+keys[0]+'.jpg'} className='modal_img' />
+                <img src={'../../img/img'+keys[1]+'.jpg'} className='modal_img' />
+                <img src={'../../img/img'+keys[2]+'.jpg'} className='modal_img' />
+              </div>
             </div>
        </Fade>
        </Modal>

@@ -110,6 +110,12 @@
 
 }
 
+.query_result{
+  display: flex;
+  text-align: center;
+  color: #CAC5C4
+}
+
 .modal_img{
   width: 28%;
   justify-content:space-around;
