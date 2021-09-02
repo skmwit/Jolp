@@ -1,8 +1,9 @@
 .home__image {
+   position: static;
   width: 100%;
-  z-index: -1;
+  /*z-index: -1;*/
   margin-bottom: -250px;
-  position: fixed;
+  position:relative;
   mask-image: #ff0c0c;
 
 }
@@ -10,6 +11,7 @@
   display: none;
 }
 .home {
+   position: static;
   display: flex;
   /* background: #ffffff; */
   justify-content: center;
@@ -18,8 +20,9 @@
   padding: 16px;
 }
 .home__row {
+   position: static;
   display: flex;
-  z-index: -1;
+  /*z-index: -1;*/
 
   margin-left: 5px;
   margin-right: 5px;
