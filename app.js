@@ -26,7 +26,7 @@ app.post('/api/:query', (req,res)=>{
     query = req.params.query;
     
     const options={
-        scriptPath:'/Users/irene/Image-Captioning Demo/self-critical.pytorch',
+        scriptPath:'./public',
         args:query
     }
     console.log(query);
