@@ -15,8 +15,13 @@ const { response } = require('express');
 
 Grid.mongo = mongoose.mongo;
 
+const cors_option={
+    origin:'http://localhost:80',
+    credentials:true
+}
+
 app.use(bodyParser.urlencoded({extended:false}));
-app.use(cors());
+app.use(cors(cors_option));
 app.use(bodyParser.json());
 
 var query;
