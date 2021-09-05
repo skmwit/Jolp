@@ -7,13 +7,15 @@ import time
 import json
 import numpy as np
 import sys
+import os
 
 # sentence = "아이보리 스키니"
 sentence=sys.argv[1]
 sentences = {}
 
+current_dir=os.getcwd()
 # json 불러와서 image_id와 caption 불러오기
-with open("/Users/irene/jolp-demo/public/vis.json") as json_file:
+with open(current_dir+"/vis.json") as json_file:
     json_data = json.load(json_file)
     for i in range(len(json_data)):
         sentences[json_data[i]['image_id']]=json_data[i]['caption']
