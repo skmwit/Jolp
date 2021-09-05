@@ -13,7 +13,7 @@ var Grid = require('gridfs-stream');
 var fs = require('fs');
 const { response } = require('express');
 
-Grid.mongo = mongoose.mongo;
+// Grid.mongo = mongoose.mongo;
 
 const cors_option={
     origin:'http://localhost:80',
@@ -25,6 +25,10 @@ app.use(cors(cors_option));
 app.use(bodyParser.json());
 
 var query;
+
+app.get('/', (req,res)=>{
+    res.send({test: "hi"})
+})
 
 // Reactjs로부터 Query 문장 받기
 app.post('/api/:query', (req,res)=>{
