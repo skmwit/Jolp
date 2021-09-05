@@ -7,6 +7,7 @@ import { useStateValue } from "./StateProvider";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import { ToastContainer } from "react-toastify";
+import Axios from "axios";
 
 
 const promise = loadStripe(
@@ -16,6 +17,13 @@ const promise = loadStripe(
 function App() {
   const [{ user }, dispatch] = useStateValue();
 
+  const callApi=async()=>{
+    Axios.get("/api").then((res)=>console.log(res.data.test));
+  }
+
+  useEffect(()=>{
+    callApi()
+  }, [])
 
   return (
     <Router>
